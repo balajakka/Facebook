@@ -21,17 +21,13 @@ public class FacebookPageStepDef {
     @Given("^I am chrome user$")
     public void step1() {
         System.out.println("I am in given");
-
     }
 
     @When("^I access facebook url$")
     public void step2() {
-
         accessFacebook();
         PageFactory.initElements(myDriver, FacebookLoginPage.class);
 //        flp = new FacebookLoginPage2(myDriver);
-
-
     }
 
     @Then("^I see facebook login page$")
@@ -39,8 +35,7 @@ public class FacebookPageStepDef {
 //        flp.assertFacebookLoginPage(myDriver);
 //        flp.enterEmailId(myDriver,"bala.jakka@icloud.com");
         FacebookLoginPage.assertEmailInputDisplayed();
-        FacebookLoginPage.enterEmailInput("bala.jakka@icloud.com");
-
+        FacebookLoginPage.enterEmailInput("jyothipaul@yahoo.com");
         FacebookLoginPage.myActions(myDriver);
 
 //        FacebookLoginPage.selectDayFromDropdown("2");
@@ -53,7 +48,6 @@ public class FacebookPageStepDef {
 //        myDriver.get("https://www.facebook.com/");
         myDriver.get(cfr.getApplicationUrl());
 //        "https://www.facebook.com/"
-
     }
 
 
