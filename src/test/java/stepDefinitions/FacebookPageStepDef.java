@@ -6,8 +6,7 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.FacebookLoginPage;
 
-import static stepDefinitions.Hooks.cfr;
-import static stepDefinitions.Hooks.myDriver;
+import static stepDefinitions.Hooks.*;
 
 /**
  * Created by balajakka on 24/01/2019.
@@ -30,6 +29,7 @@ public class FacebookPageStepDef {
         accessFacebook();
         PageFactory.initElements(myDriver, FacebookLoginPage.class);
 //        flp = new FacebookLoginPage2(myDriver);
+        ScShot.capScrSht(myDriver,"screenShot");
 
 
     }

@@ -1,10 +1,12 @@
 package stepDefinitions;
 
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import utilities.ConfigFileReader;
 import utilities.Log;
 
@@ -17,19 +19,22 @@ public class Hooks {
 
     public static WebDriver myDriver;
     public static ConfigFileReader cfr = new ConfigFileReader();
-
+    public static CapScreenSht ScShot = new CapScreenSht();
+    static ChromeOptions options;
     @Before
-    public void beforeTest(){
-        System.setProperty("webdriver.chrome.driver", "./src/test/chromedriver");
+    public void beforeTest(Scenario scr){
+        System.setProperty("webdriver.chrome.driver", "./src/test/chromedriver.exe");
+        options = new ChromeOptions();
+        options.addArguments("--start-maximized");
         myDriver = new ChromeDriver();
-        myDriver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
-        Log.startTestCase("Scenario");
+        myDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Log.startTestCase(scr.getName());
 
     }
 
     @After
-    public void afterTest(){
-        Log.endTestCase("Scenario");
+    public void afterTest(Scenario scr){
+        Log.endTestCase(scr.getName());
         myDriver.quit();
 
     }

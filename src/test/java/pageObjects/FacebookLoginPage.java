@@ -9,6 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import static stepDefinitions.Hooks.ScShot;
+import static stepDefinitions.Hooks.myDriver;
+
 /**
  * Created by balajakka on 25/01/2019.
  */
@@ -26,7 +29,7 @@ public class FacebookLoginPage {
     @FindBy(id = "u_0_l")
     static WebElement surnameInput;
 
-    @FindBy(id= "loginbutton")
+    @FindBy(id = "loginbutton")
     static WebElement loginButton;
 
     @FindBy(xpath = "//select[@aria-label='Day']")
@@ -39,30 +42,30 @@ public class FacebookLoginPage {
     static WebElement yearDropDown;
 
 
-
-    public static void assertEmailInputDisplayed(){
-        Assert.assertEquals(true,emailInput.isDisplayed());
+    public static void assertEmailInputDisplayed() {
+        Assert.assertEquals(true, emailInput.isDisplayed());
     }
 
 
-    public static void enterEmailInput(String emailId){
+    public static void enterEmailInput(String emailId) {
         emailInput.sendKeys(emailId);
+        ScShot.capScrSht(myDriver, "screenShot");
     }
 
 
-    public static void selectDayFromDropdown(String dayString){
+    public static void selectDayFromDropdown(String dayString) {
         Select daySelect = new Select(dayDropDown);
 
         daySelect.selectByValue(dayString);
     }
 
-    public static void selectMonthFromDropdown(String monthString){
+    public static void selectMonthFromDropdown(String monthString) {
         Select monthSelect = new Select(monthDropDown);
 //        monthSelect.selectByIndex(monthIndex);
         monthSelect.selectByValue(monthString);
     }
 
-    public static void selectYearFromDropdown(String yearString){
+    public static void selectYearFromDropdown(String yearString) {
         Select yearSelect = new Select(yearDropDown);
 //        monthSelect.selectByIndex(monthIndex);
         yearSelect.selectByValue(yearString);
@@ -70,7 +73,13 @@ public class FacebookLoginPage {
 //        System.out.println(yearSelect.selectByIndex(1));
     }
 
-    public static void myActions(WebDriver driver){
+    //    public void checkDropDown(int i,String S,String D) {
+//        daySelect.selectByIndex(i);
+//
+//       monthSelect.selectByValue(S);
+//       yearSelect.selectByVisibleText(D);
+//    }
+    public static void myActions(WebDriver driver) {
 
         Actions actions = new Actions(driver);
         Action builder = actions
@@ -86,5 +95,20 @@ public class FacebookLoginPage {
 
     }
 
+    public void pwd(String S) {
+        pwdInput.sendKeys(S);
+        ScShot.capScrSht(myDriver, "screenShot");
+    }
 
+    public void click1() {
+        // submitButton.click();
+        //link.click();
+
+
+        // driver.navigate().back();
+        ScShot.capScrSht(myDriver, "screenShot");
+        Assert.assertEquals(true, myDriver.getTitle().contains("Facebook"));
+        System.out.println("All Done");
+    }
 }
+
