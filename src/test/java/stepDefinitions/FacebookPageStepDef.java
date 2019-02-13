@@ -39,7 +39,7 @@ public class FacebookPageStepDef {
 //        flp.assertFacebookLoginPage(myDriver);
 //        flp.enterEmailId(myDriver,"bala.jakka@icloud.com");
         FacebookLoginPage.assertEmailInputDisplayed();
-        FacebookLoginPage.enterEmailInput("bala.jakka@icloud.com");
+        FacebookLoginPage.enterEmailInput("Archanasudani@gmail.com");
 
         FacebookLoginPage.myActions(myDriver);
 

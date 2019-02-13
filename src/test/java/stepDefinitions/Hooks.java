@@ -20,7 +20,8 @@ public class Hooks {
 
     @Before
     public void beforeTest(){
-        System.setProperty("webdriver.chrome.driver", "./src/test/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\personal\\Facebook\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "./src/test/chromedriver");
         myDriver = new ChromeDriver();
         myDriver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
         Log.startTestCase("Scenario");

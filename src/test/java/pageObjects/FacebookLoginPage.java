@@ -76,11 +76,11 @@ public class FacebookLoginPage {
         Action builder = actions
                 .moveToElement(firstNameInput)
                 .click()
-                .sendKeys("BALA")
+                .sendKeys("Archana")
                 .sendKeys(Keys.TAB)
-                .sendKeys("JAKKA")
+                .sendKeys("Sudani")
                 .sendKeys(Keys.TAB)
-                .sendKeys("07710234714")
+                .sendKeys("123456789")
                 .build();
         builder.perform();
 
