@@ -16,6 +16,7 @@ public class FacebookPageStepDef {
 
 //    FacebookLoginPage2 flp;
 
+//   This is cloned from Bala Facebook Project
 
 
     @Given("^I am chrome user$")
