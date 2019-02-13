@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features ="./src/test/Features",
+        features ="C:\\Users\\srini\\CloneProjects\\Facebook\\src\\test\\Features",
         glue={"stepDefinitions"},
         format = {"pretty", "html:target/destination" +
                 ""}
