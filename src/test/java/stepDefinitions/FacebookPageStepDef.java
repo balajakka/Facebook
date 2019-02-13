@@ -5,6 +5,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.FacebookLoginPage;
+import utilities.Log;
 
 import static stepDefinitions.Hooks.*;
 
@@ -18,13 +19,13 @@ public class FacebookPageStepDef {
 
 
     @Given("^I am chrome user$")
-    public void step1() {
+    public void Facebook_step1() {
         System.out.println("I am in given");
-
+        Log.info("I am in Facebook step def");
     }
 
     @When("^I access facebook url$")
-    public void step2() {
+    public void Facebook_step2() {
 
         accessFacebook();
         PageFactory.initElements(myDriver, FacebookLoginPage.class);
@@ -35,7 +36,7 @@ public class FacebookPageStepDef {
     }
 
     @Then("^I see facebook login page$")
-    public void step3() {
+    public void Facebook_step3() {
 //        flp.assertFacebookLoginPage(myDriver);
 //        flp.enterEmailId(myDriver,"bala.jakka@icloud.com");
         FacebookLoginPage.assertEmailInputDisplayed();

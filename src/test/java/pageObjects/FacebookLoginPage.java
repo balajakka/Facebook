@@ -41,6 +41,9 @@ public class FacebookLoginPage {
     @FindBy(xpath = "//select[@aria-label='Year']")
     static WebElement yearDropDown;
 
+    @FindBy(xpath ="//a[contains(text(),'Forgotten')]" )
+    static WebElement forgottenLink;
+
 
     public static void assertEmailInputDisplayed() {
         Assert.assertEquals(true, emailInput.isDisplayed());
@@ -101,8 +104,8 @@ public class FacebookLoginPage {
     }
 
     public void click1() {
-        // submitButton.click();
-        //link.click();
+        // loginButton.click();
+        //forgottenLink.click();
 
 
         // driver.navigate().back();

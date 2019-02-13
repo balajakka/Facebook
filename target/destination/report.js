@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 15348004342,
+  "duration": 4984665503,
   "status": "passed"
 });
 formatter.scenario({
@@ -34,28 +34,28 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "FacebookPageStepDef.step1()"
+  "location": "FacebookPageStepDef.Facebook_step1()"
 });
 formatter.result({
-  "duration": 3579207508,
+  "duration": 145189315,
   "status": "passed"
 });
 formatter.match({
-  "location": "FacebookPageStepDef.step2()"
+  "location": "FacebookPageStepDef.Facebook_step2()"
 });
 formatter.result({
-  "duration": 36341525819,
+  "duration": 3979547162,
   "status": "passed"
 });
 formatter.match({
-  "location": "FacebookPageStepDef.step3()"
+  "location": "FacebookPageStepDef.Facebook_step3()"
 });
 formatter.result({
-  "duration": 2728165849,
+  "duration": 1384594022,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1200566169,
+  "duration": 664775211,
   "status": "passed"
 });
 formatter.uri("Santander.feature");
@@ -67,7 +67,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5929047764,
+  "duration": 2317120423,
   "status": "passed"
 });
 formatter.scenario({
@@ -94,28 +94,88 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "FacebookPageStepDef.step1()"
+  "location": "FacebookPageStepDef.Facebook_step1()"
 });
 formatter.result({
-  "duration": 115914,
+  "duration": 170249,
   "status": "passed"
 });
 formatter.match({
   "location": "SantanderRetailStepDef.santander_step2()"
 });
 formatter.result({
-  "duration": 21888660079,
+  "duration": 16154470912,
   "status": "passed"
 });
 formatter.match({
   "location": "SantanderRetailStepDef.santander_step3()"
 });
 formatter.result({
-  "duration": 58561,
+  "duration": 45279,
   "status": "passed"
 });
 formatter.after({
-  "duration": 722315799,
+  "duration": 704287501,
+  "status": "passed"
+});
+formatter.uri("WindowHandling.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Handling Multiple WebPages",
+  "description": "",
+  "id": "handling-multiple-webpages",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 2377626485,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 2,
+  "name": "Opening Multiple pages from Naukri.com",
+  "description": "",
+  "id": "handling-multiple-webpages;opening-multiple-pages-from-naukri.com",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 3,
+  "name": "Opening the Naukri Homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 4,
+  "name": "Opening multiple pages from Naukri Homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 5,
+  "name": "Closing All Windows",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "WindowHandlingStepDefs.WindowHandling_step1()"
+});
+formatter.result({
+  "duration": 4811647698,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WindowHandlingStepDefs.WindowHandling_step2()"
+});
+formatter.result({
+  "duration": 3558804175,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WindowHandlingStepDefs.WindowHandling_step3()"
+});
+formatter.result({
+  "duration": 17389842767,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 578696761,
   "status": "passed"
 });
 });

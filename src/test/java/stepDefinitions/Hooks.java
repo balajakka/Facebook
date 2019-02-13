@@ -23,10 +23,11 @@ public class Hooks {
     static ChromeOptions options;
     @Before
     public void beforeTest(Scenario scr){
-        System.setProperty("webdriver.chrome.driver", "./src/test/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",cfr.getDriverPath());
+        // System.setProperty("webdriver.chrome.driver", );
         options = new ChromeOptions();
         options.addArguments("--start-maximized");
-        myDriver = new ChromeDriver();
+        myDriver = new ChromeDriver(options);
         myDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Log.startTestCase(scr.getName());
 
