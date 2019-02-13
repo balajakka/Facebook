@@ -51,6 +51,7 @@ public class FacebookPageStepDef {
 
     public void accessFacebook(){
 //        myDriver.get("https://www.facebook.com/");
+        System.out.println("Access the facebook");
         myDriver.get(cfr.getApplicationUrl());
 //        "https://www.facebook.com/"
 

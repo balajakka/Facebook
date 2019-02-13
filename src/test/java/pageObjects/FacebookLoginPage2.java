@@ -34,6 +34,7 @@ public class FacebookLoginPage2 {
     }
 
     public void assertFacebookLoginPage(WebDriver driver){
+        System.out.println("Assert the facebook login page");
         Assert.assertEquals(true,driver.getTitle().contains("Facebook"));
     }
 
