@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c6e34c9-2738-4712-ac5f-1a58a5563474" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/Features/Santander.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Features/Santander.feature" afterDir="false" />
-    </list>
+    <list default="true" id="7c6e34c9-2738-4712-ac5f-1a58a5563474" name="Default" comment="" />
     <ignored path="Facebook.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -448,7 +446,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
