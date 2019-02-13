@@ -21,6 +21,7 @@ public class FacebookPageStepDef {
     @Given("^I am chrome user$")
     public void step1() {
         System.out.println("I am in given");
+        System.out.println("Vijaya Branch");
 
     }
 
