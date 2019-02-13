@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4788833531,
+  "duration": 4899704063,
   "status": "passed"
 });
 formatter.scenario({
@@ -37,25 +37,25 @@ formatter.match({
   "location": "FacebookPageStepDef.step1()"
 });
 formatter.result({
-  "duration": 90943576,
+  "duration": 157392423,
   "status": "passed"
 });
 formatter.match({
   "location": "FacebookPageStepDef.step2()"
 });
 formatter.result({
-  "duration": 2503011966,
+  "duration": 2781231558,
   "status": "passed"
 });
 formatter.match({
   "location": "FacebookPageStepDef.step3()"
 });
 formatter.result({
-  "duration": 793085266,
+  "duration": 709697050,
   "status": "passed"
 });
 formatter.after({
-  "duration": 728741757,
+  "duration": 721388250,
   "status": "passed"
 });
 formatter.uri("Santander.feature");
@@ -67,7 +67,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3127819307,
+  "duration": 3922243129,
   "status": "passed"
 });
 formatter.scenario({
@@ -97,25 +97,25 @@ formatter.match({
   "location": "FacebookPageStepDef.step1()"
 });
 formatter.result({
-  "duration": 72273,
+  "duration": 113756,
   "status": "passed"
 });
 formatter.match({
   "location": "SantanderRetailStepDef.santander_step2()"
 });
 formatter.result({
-  "duration": 14755402122,
+  "duration": 16235709092,
   "status": "passed"
 });
 formatter.match({
   "location": "SantanderRetailStepDef.santander_step3()"
 });
 formatter.result({
-  "duration": 87241,
+  "duration": 629934,
   "status": "passed"
 });
 formatter.after({
-  "duration": 900737275,
+  "duration": 1034092989,
   "status": "passed"
 });
 });
