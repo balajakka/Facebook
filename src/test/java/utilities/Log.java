@@ -34,9 +34,9 @@ package utilities;
 
             Log.info("XXXXXXXXXXXXXXXXXXXXXXX             "+"-E---N---D-"+"             XXXXXXXXXXXXXXXXXXXXXX");
 
-            Log.info("X");
+            Log.info("x");
 
-            Log.info("X");
+            Log.info("");
 
             Log.info("X");
 
