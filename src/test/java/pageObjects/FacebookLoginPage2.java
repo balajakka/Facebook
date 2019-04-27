@@ -12,9 +12,36 @@ public class FacebookLoginPage2 {
 
     WebElement emailInput;
     WebElement pwdInput;
+    WebElement loginButton;
+
     WebElement firstNameInput;
     WebElement surnameInput;
-    WebElement loginButton;
+
+    public WebElement captureEmailInput(WebDriver driver){
+
+        return driver.findElement(By.id("email"));
+
+    }
+
+    public WebElement capturepwdInput(WebDriver driver){
+
+        return driver.findElement(By.id("pass"));
+
+    }
+
+    public WebElement captureLoginButton(WebDriver driver){
+
+        return driver.findElement(By.id("loginButton"));
+
+    }
+
+    public void loginFacebook(String usr, String pwd, WebDriver driver){
+
+        captureEmailInput(driver).sendKeys(usr);
+        capturepwdInput(driver).sendKeys(pwd);
+        captureLoginButton(driver).click();
+    }
+
 
     public FacebookLoginPage2(WebDriver driver){
         emailInput = driver.findElement(By.id("email"));

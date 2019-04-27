@@ -17,6 +17,7 @@ public class FacebookLoginPage {
     @FindBy(id = "email")
     static WebElement emailInput;
 
+
     @FindBy(id = "pass")
     static WebElement pwdInput;
 
@@ -73,7 +74,7 @@ public class FacebookLoginPage {
     public static void myActions(WebDriver driver){
 
         Actions actions = new Actions(driver);
-        Action builder = actions
+        Action abc = actions
                 .moveToElement(firstNameInput)
                 .click()
                 .sendKeys("BALA")
@@ -82,7 +83,7 @@ public class FacebookLoginPage {
                 .sendKeys(Keys.TAB)
                 .sendKeys("07710234714")
                 .build();
-        builder.perform();
+        abc.perform();
 
     }
 

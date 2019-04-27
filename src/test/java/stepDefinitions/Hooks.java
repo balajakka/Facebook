@@ -29,6 +29,7 @@ public class Hooks {
 //        myDriver = new ChromeDriver();
         myDriver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
         Log.startTestCase(scenario.getName());
+        myDriver.manage().pa
 
     }
 

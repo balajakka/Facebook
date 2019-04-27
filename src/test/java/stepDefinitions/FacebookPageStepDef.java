@@ -29,6 +29,8 @@ public class FacebookPageStepDef {
 
         accessFacebook();
         PageFactory.initElements(myDriver, FacebookLoginPage.class);
+
+
 //        flp = new FacebookLoginPage2(myDriver);
 
 
@@ -43,7 +45,8 @@ public class FacebookPageStepDef {
 
         FacebookLoginPage.myActions(myDriver);
 
-//        FacebookLoginPage.selectDayFromDropdown("2");
+        FacebookLoginPage.selectDayFromDropdown("2");
+//        FacebookLoginPage.selectDayFromDropdown(By;
 //        FacebookLoginPage.selectMonthFromDropdown("3");
 //        FacebookLoginPage.selectYearFromDropdown("1991");
 
